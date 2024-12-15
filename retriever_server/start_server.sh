@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES="" uvicorn serve:app --host 0.0.0.0 --port 8810 --reload

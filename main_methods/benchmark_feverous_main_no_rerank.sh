@@ -1,0 +1,15 @@
+python method_vegraph_agent.py \
+    --job-folder /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/benchmark_results/benchmark_results_main_feverous_no_rerank_0510 \
+    --preprocessed-dataset-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/processed_datasets/process_dataset_main \
+    --construct-graph-examples-set-id 11 \
+    --construct-graph-examples-prompt-set-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag_copy/main_methods/prompts/examples \
+    --dataset feverous \
+    --partition feverous_sentence \
+    --retrieval-topk-sparse 5000 \
+    --retrieval-topk-dense 1000 \
+    --retrieval-topk-rerank 15 \
+    --n-results 5 \
+    --n-workers 30 \
+    --temperature 0.3 \
+    --llm-host-address http://10.254.138.191:9002 \
+    --resolve-entity-max-loop 5 \

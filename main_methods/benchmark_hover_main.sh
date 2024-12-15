@@ -1,0 +1,63 @@
+python zero_shot_agent_main.py \
+    --job-folder /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/benchmark_results/benchmark_results_main_hover_all_no_rerank \
+    --preprocessed-dataset-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/processed_datasets/process_dataset_main \
+    --construct-graph-examples-set-id 0 \
+    --construct-graph-examples-prompt-set-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/prompt_examples_tuning/construct_graph_hover_all/prompt_set \
+    --dataset hover \
+    --partition 2hop \
+    --retrieval-topk-sparse 5000 \
+    --retrieval-topk-dense 1000 \
+    --retrieval-topk-rerank 15 \
+    --n-results 5 \
+    --n-workers 70 \
+    --temperature 0.0 \
+    --llm-host-address http://10.254.138.190:9148 \
+    --resolve-entity-max-loop 5 \
+
+python zero_shot_agent_main.py \
+    --job-folder /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/benchmark_results/benchmark_results_main_hover_all_no_rerank \
+    --preprocessed-dataset-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/processed_datasets/process_dataset_main \
+    --construct-graph-examples-set-id 0 \
+    --construct-graph-examples-prompt-set-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/prompt_examples_tuning/construct_graph_hover_all/prompt_set \
+    --dataset hover \
+    --partition 3hop \
+    --retrieval-topk-sparse 5000 \
+    --retrieval-topk-dense 1000 \
+    --retrieval-topk-rerank 15 \
+    --n-results 5 \
+    --n-workers 70 \
+    --temperature 0.0 \
+    --llm-host-address http://10.254.138.190:9148 \
+    --resolve-entity-max-loop 5 \
+
+python zero_shot_agent_main.py \
+    --job-folder /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/benchmark_results/benchmark_results_main_hover_all_no_rerank \
+    --preprocessed-dataset-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/processed_datasets/process_dataset_main \
+    --construct-graph-examples-set-id 0 \
+    --construct-graph-examples-prompt-set-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/prompt_examples_tuning/construct_graph_hover_all/prompt_set \
+    --dataset hover \
+    --partition 4hop \
+    --retrieval-topk-sparse 5000 \
+    --retrieval-topk-dense 1000 \
+    --retrieval-topk-rerank 15 \
+    --n-results 5 \
+    --n-workers 70 \
+    --temperature 0.0 \
+    --llm-host-address http://10.254.138.190:9148 \
+    --resolve-entity-max-loop 5 \
+
+python zero_shot_agent_main.py \
+    --job-folder /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/benchmark_results/benchmark_results_main_feverous_all_no_rerank \
+    --preprocessed-dataset-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/processed_datasets/process_dataset_main \
+    --construct-graph-examples-set-id 16 \
+    --construct-graph-examples-prompt-set-path /workspace/home/hoangpv4/fact_checking_with_cognitive_graph_rag/main_methods/prompt_examples_tuning_feverous/all/prompt_set \
+    --dataset feverous \
+    --partition feverous_sentence \
+    --retrieval-topk-sparse 5000 \
+    --retrieval-topk-dense 1000 \
+    --retrieval-topk-rerank 15 \
+    --n-results 5 \
+    --n-workers 70 \
+    --temperature 0.0 \
+    --llm-host-address http://10.254.138.190:9148 \
+    --resolve-entity-max-loop 5 \

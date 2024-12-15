@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "vegraph"
+version = "0.1.0"
+description = "Codes for Paper \"Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation\""
+authors = ["Phạm Hoàng <hoang1482002@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.57.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
